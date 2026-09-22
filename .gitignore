@@ -1,0 +1,35 @@
+# Environment variables
+.env
+.env.backup
+.env.*.local
+
+# Sensitive credentials
+/storage/credentials/
+google-service-account.json
+
+# Storage and runtime files
+/storage/logs/*.log
+/storage/cache/*
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+!/storage/logs/.gitkeep
+!/storage/cache/.gitkeep
+
+# Operating System files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

@@ -1,0 +1,6 @@
+# Denegar todo acceso web a los respaldos de la base de datos
+Order Deny,Allow
+Deny from all
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
